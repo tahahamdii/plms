@@ -1,0 +1,96 @@
+1. User Registration
+What it does:
+This lets people create an account. They just need to provide their name, email, and a password.
+
+Cool Stuff:
+
+It checks if the email is already used.
+If everything is good, it sends a code (OTP) to their email to confirm it.
+What happens next:
+The user gets registered, and they need to verify their email to continue.
+
+2. Email Verification
+What it does:
+This confirms that the email address belongs to the user.
+
+Cool Stuff:
+
+The user enters the code (OTP) they got in their email.
+If the code is correct, the email is marked as verified.
+If the code expired or was wrong, the system sends a new code.
+What happens next:
+** ADMIN PENDING REQUEST VERIFICATON **
+3. User Login
+What it does:
+This allows users to log in using their email and password.
+
+Cool Stuff:
+
+It checks if the email and password match.
+It makes sure the email is verified first.
+If all is good, it logs the user in and gives them secure access tokens.
+What happens next:
+The user is logged in and ready to use the system.
+
+4. Get New Access Token
+What it does:
+This generates a new login token if the old one expires.
+
+Cool Stuff:
+
+The user doesn’t need to log in again.
+Tokens are updated securely.
+What happens next:
+The user stays logged in without interruptions.
+
+5. User Profile
+What it does:
+This shows basic details about the logged-in user, like their name and email.
+
+What happens next:
+The user can see their profile info.
+
+6. Logout
+What it does:
+This logs the user out.
+
+Cool Stuff:
+
+It clears all the login details (tokens).
+What happens next:
+The user is logged out and can’t access their account anymore unless they log in again.
+
+7. Change Password
+What it does:
+This allows users to update their password.
+
+Cool Stuff:
+
+It makes sure the new password and confirmation match.
+Updates the password securely.
+What happens next:
+The password is changed, and the user can log in with their new one.
+
+8. Request Password Reset Link
+What it does:
+This sends an email to reset the user’s password if they forget it.
+
+Cool Stuff:
+
+A special link with a secure code is emailed to the user.
+What happens next:
+The user clicks the link and resets their password.
+
+9. Reset Password
+What it does:
+This lets users set a new password after clicking the reset link.
+
+Cool Stuff:
+
+It checks the reset code from the email.
+Ensures the new password and confirmation match.
+What happens next:
+The password is reset, and the user can log in again.
+
+// gestion des membres 
+ACCEPT / DECLINE
