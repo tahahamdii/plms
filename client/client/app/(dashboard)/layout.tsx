@@ -1,3 +1,4 @@
+import { ToastProvider } from "@/components/providers/toaster-provider";
 import { Navbar } from "./_components/navbar";
 import { SideBar } from "./_components/sidebar";
 import { Inter } from 'next/font/google'
