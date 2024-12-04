@@ -15,6 +15,7 @@ import {Form,
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { title } from "process";
+import Link from "next/link";
 
 const formSchema = z.object({
     title: z.string().min(1, {
@@ -63,9 +64,27 @@ const CreatePage = () => {
                                       {...field}
                                     />
                                 </FormControl>
+                                <FormDescription>
+                                    What will you teach in this course?
+                                </FormDescription>
+                                <FormMessage/>
                             </FormItem>
                           )}
                         />
+                        <div className="flex items-center gap-x-2">
+                          <Link href="/">
+                          <Button
+                            type="button"
+                            variant="ghost"
+                          >
+                            Cancel
+                          </Button>
+                          </Link>
+                          <Button type="submit" disabled={!isValid || isSubmitting}>
+                            Continue
+                          </Button>
+
+                        </div>
 
                     </form>
 
